@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
-    <Script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
+    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
     <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" 
@@ -102,6 +102,7 @@
   </head>
   <body>
 
+    <!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
@@ -123,7 +124,13 @@
       </div>
     </div>
 
+    <!-- We use row-fluid inside containers to achieve a resizable layout. -->
+    <!-- blogs.endjin.com/2013/04/tips-for-implementing-responsive-designs-using-bootstrap/ -->
+    <!-- http://stackoverflow.com/a/12270322 -->
     <div class="container">
+      <!-- Font and paired font of .heading/.subheading and body from Google Fonts -->
+      <!-- www.google.com/fonts/specimen/Ubuntu -->
+      <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
       <div class="row-fluid heading">
         <div class="span12">
           <h1>Bonsai Kittens</h1>
@@ -138,12 +145,14 @@
       </div>
       <div class="row-fluid pitch">
         <div class="span5 offset1 video">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
+          <img src="insertbw.jpg">
         </div>
+
         <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
         <div class="span5 actions">
+          <div class="row-fluid">
           <div class="span8 offset2">
-            <div class="statistics">
+            <div class="row-fluid statistics">
               <div class="span4">
                 <!-- linediv-l and linediv-r give dividing lines that look
                 different in horizontal and vertical layouts, illustrating
@@ -164,6 +173,7 @@
               </div>
             </div>
           </div>
+          <div class="row-fluid">
           <div class="span10 offset1">
             <!-- Bootstrap progress bar -->
             <!-- http://twitter.github.io/bootstrap/components.html#progress -->
@@ -172,17 +182,23 @@
               <div class="bar bar-warning" style="width: 40%;"></div>
             </div>
           </div>
+          </div>
+          <div class="row-fluid">
           <div class="span6 offset3 order">
             <!-- Standard Bootstrap button. -->
             <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
             <button class="btn btn-success btn-large">Preorder</button>
           </div>
+          </div>
+          <div class="row-fluid">
           <div class="span8 offset2 social">
             <!-- Social buttons are not included in default Bootstrap. -->
             <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
             <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
             <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
           </div>
+          </div>
+        </div>
         </div>
       </div>
 
@@ -196,7 +212,14 @@
         </div>
         <div class="span5 copy">
           <p>
-	    For centuries, people in the West have marveled at the delicate beauty produced by Oriental artists and sculptors. From gardening to tattooing to dance and martial arts, these craftsmen have enthralled us with complex forms and simplistic perfection. One of the most fascinating of the visual techniques to emerge from this highly cultured region is the Oriental art of miniature sculpture. Who has not been stricken with the expressive grace of Japanese Bonsai? Though once the sole province of Bonsai masters within Japan, Bonsai plants have been available to fortunate consumers throughout the world for some time. With this in mind, we are proud to now offer to you the animal complement of this art form; the Bonsai Kitten.
+            For centuries, people in the West have marveled at the delicate beauty produced by Oriental artists
+            and sculptors. From gardening to tattooing to dance and martial arts, these craftsmen have enthralled
+            us with complex forms and simplistic perfection. One of the most fascinating of the visual techniques
+            to emerge from this highly cultured region is the Oriental art of miniature sculpture. Who has not been
+            stricken with the expressive grace of Japanese Bonsai? Though once the sole province of Bonsai masters
+            within Japan, Bonsai plants have been available to fortunate consumers throughout the world for some
+            time. With this in mind, we are proud to now offer to you the animal complement of this art form; the
+            Bonsai Kitten.
           </p>
         </div>
       </div>
@@ -204,11 +227,21 @@
       <div class="row-fluid section2">
         <div class="span5 offset1 copy copy-right">
           <p>
-A bonsai plant, along with its more widely encountered counterpart the topiary garden, achieves its miniature yet mature form through a long and delicate process of trimming during the formative years of the tree. It is not possible to trim a kitten! However, fortunately the Oriental artists of yore were also expert in the modification of animal forms. Both foot-binding and head-binding were practiced in the Far East, for the purpose of miniaturizing the feet and shaping the head into attractive shapes. This technique is also the principle behind the well-known corset, which is regaining popularity in recent years. By physically constraining the growth of a developing living thing, it can be directed to take the shape of the vessel that constrains it. Just as a topiary gardener produces bushes that take the forms of animals or any other thing, you no longer need be satisfied with a housepet having the same mundane shape as all other members of its species. With Bonsai Kitten, a world of variation awaits you, limited only by your own imagination.
+            A bonsai plant, along with its more widely encountered counterpart the topiary garden, achieves its
+            miniature yet mature form through a long and delicate process of trimming during the formative years
+            of the tree. It is not possible to trim a kitten! However, fortunately the Oriental artists of yore
+            were also expert in the modification of animal forms. Both foot-binding and head-binding were practiced
+            in the Far East, for the purpose of miniaturizing the feet and shaping the head into attractive shapes.
+            This technique is also the principle behind the well-known corset, which is regaining popularity in
+            recent years. By physically constraining the growth of a developing living thing, it can be directed to
+            take the shape of the vessel that constrains it. Just as a topiary gardener produces bushes that take
+            the forms of animals or any other thing, you no longer need be satisfied with a housepet having the
+            same mundane shape as all other members of its species. With Bonsai Kitten, a world of variation awaits
+            you, limited only by your own imagination.
           </p>
         </div>
         <div class="span5 asset">
-          <img class="img-polaroid" src="img/squishGray.jpg">
+          <img src="squishGray.jpg">
         </div>
       </div>
 
@@ -248,6 +281,7 @@ A bonsai plant, along with its more widely encountered counterpart the topiary g
             </div>
           </div>
       </div>
+
       <!-- Not crucial, but we put this under a CC By-SA 3.0 license. -->
       <!-- http://creativecommons.org/licenses/ -->
       <div class="row-fluid footer">
